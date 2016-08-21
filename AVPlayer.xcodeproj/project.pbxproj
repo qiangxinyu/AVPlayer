@@ -13,6 +13,10 @@
 		2922B8081D62F3B800C793EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2922B8061D62F3B800C793EA /* Main.storyboard */; };
 		2922B80A1D62F3B800C793EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2922B8091D62F3B800C793EA /* Assets.xcassets */; };
 		2922B80D1D62F3B800C793EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2922B80B1D62F3B800C793EA /* LaunchScreen.storyboard */; };
+		2922B8181D62F52800C793EA /* XYAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2922B8171D62F52800C793EA /* XYAVPlayerView.m */; };
+		2922B81B1D62F53400C793EA /* XYAVControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2922B81A1D62F53400C793EA /* XYAVControlView.m */; };
+		2922B81F1D62F71A00C793EA /* XYAVControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2922B81E1D62F71A00C793EA /* XYAVControlView.xib */; };
+		2977741D1D647F9900C442D4 /* LSFilePlayerResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977741C1D647F9900C442D4 /* LSFilePlayerResourceLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		2922B8091D62F3B800C793EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2922B80C1D62F3B800C793EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2922B80E1D62F3B800C793EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2922B8161D62F52800C793EA /* XYAVPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAVPlayerView.h; sourceTree = "<group>"; };
+		2922B8171D62F52800C793EA /* XYAVPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAVPlayerView.m; sourceTree = "<group>"; };
+		2922B8191D62F53400C793EA /* XYAVControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAVControlView.h; sourceTree = "<group>"; };
+		2922B81A1D62F53400C793EA /* XYAVControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAVControlView.m; sourceTree = "<group>"; };
+		2922B81E1D62F71A00C793EA /* XYAVControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XYAVControlView.xib; sourceTree = "<group>"; };
+		2922B8201D63032B00C793EA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2977741B1D647F9900C442D4 /* LSFilePlayerResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFilePlayerResourceLoader.h; sourceTree = "<group>"; };
+		2977741C1D647F9900C442D4 /* LSFilePlayerResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFilePlayerResourceLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,7 @@
 		2922B7F11D62F3B800C793EA = {
 			isa = PBXGroup;
 			children = (
+				2922B8151D62F51500C793EA /* Player */,
 				2922B7FC1D62F3B800C793EA /* AVPlayer */,
 				2922B7FB1D62F3B800C793EA /* Products */,
 			);
@@ -62,6 +75,9 @@
 				2922B8011D62F3B800C793EA /* AppDelegate.m */,
 				2922B8031D62F3B800C793EA /* ViewController.h */,
 				2922B8041D62F3B800C793EA /* ViewController.m */,
+				2922B8201D63032B00C793EA /* PrefixHeader.pch */,
+				2977741B1D647F9900C442D4 /* LSFilePlayerResourceLoader.h */,
+				2977741C1D647F9900C442D4 /* LSFilePlayerResourceLoader.m */,
 				2922B8061D62F3B800C793EA /* Main.storyboard */,
 				2922B8091D62F3B800C793EA /* Assets.xcassets */,
 				2922B80B1D62F3B800C793EA /* LaunchScreen.storyboard */,
@@ -77,6 +93,18 @@
 				2922B7FE1D62F3B800C793EA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2922B8151D62F51500C793EA /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2922B8161D62F52800C793EA /* XYAVPlayerView.h */,
+				2922B8171D62F52800C793EA /* XYAVPlayerView.m */,
+				2922B8191D62F53400C793EA /* XYAVControlView.h */,
+				2922B81A1D62F53400C793EA /* XYAVControlView.m */,
+				2922B81E1D62F71A00C793EA /* XYAVControlView.xib */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +133,7 @@
 		2922B7F21D62F3B800C793EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XY;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "强新宇";
 				TargetAttributes = {
@@ -136,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2922B81F1D62F71A00C793EA /* XYAVControlView.xib in Resources */,
 				2922B80D1D62F3B800C793EA /* LaunchScreen.storyboard in Resources */,
 				2922B80A1D62F3B800C793EA /* Assets.xcassets in Resources */,
 				2922B8081D62F3B800C793EA /* Main.storyboard in Resources */,
@@ -151,7 +181,10 @@
 			files = (
 				2922B8051D62F3B800C793EA /* ViewController.m in Sources */,
 				2922B8021D62F3B800C793EA /* AppDelegate.m in Sources */,
+				2977741D1D647F9900C442D4 /* LSFilePlayerResourceLoader.m in Sources */,
 				2922B7FF1D62F3B800C793EA /* main.m in Sources */,
+				2922B8181D62F52800C793EA /* XYAVPlayerView.m in Sources */,
+				2922B81B1D62F53400C793EA /* XYAVControlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +298,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AVPlayer/PrefixHeader.pch";
 				INFOPLIST_FILE = AVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qxy.AVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +311,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AVPlayer/PrefixHeader.pch";
 				INFOPLIST_FILE = AVPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qxy.AVPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +339,7 @@
 				2922B8131D62F3B800C793EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
