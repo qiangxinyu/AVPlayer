@@ -19,7 +19,6 @@
     if ([super initWithFrame:frame]) {
         self.backgroundColor = [UIColor blackColor];
         [self addSubview:self.playControlView];
-
     }
     return self;
 }

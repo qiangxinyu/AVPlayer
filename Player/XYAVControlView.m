@@ -18,6 +18,7 @@
 {
     return [[NSBundle mainBundle] loadNibNamed:@"XYAVControlView" owner:self options:nil].firstObject;
 }
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -49,7 +50,6 @@
     
     
     [self hiddenViews];
-
 }
 
 
